@@ -1,417 +1,146 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HealthyBe</title>
-    <link rel="stylesheet" href="index.css">
+    <!-- Link Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-gray-100">
 
-<body>
-
-    <section id="Home">
-        <nav>
+    <section id="Home" class="relative">
+        <nav class="flex items-center justify-between p-6 bg-white shadow-md">
             <div class="logo">
-                <img src="image/logo.png" alt="logo">
+                <img src="image/logo.png" alt="logo" class="h-12">
             </div>
 
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="#Healthcare">Healthcare</a></li>
-                <li><a href="#Insurance">Insurance</a></li>
-                <li><a href="#Emergency">Emergency</a></li>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="text-lg text-gray-700 hover:text-green-500">Home</a></li>
+                <li><a href="login.html" class="text-lg text-gray-700 hover:text-green-500">Login</a></li>
+                <li><a href="#Healthcare" class="text-lg text-gray-700 hover:text-green-500">Healthcare</a></li>
+                <li><a href="#Insurance" class="text-lg text-gray-700 hover:text-green-500">Insurance</a></li>
+                <li><a href="#Emergency" class="text-lg text-gray-700 hover:text-green-500">Emergency</a></li>
             </ul>
 
-            <div class="icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+            <div class="flex space-x-4">
+                <i class="fa-solid fa-magnifying-glass text-xl text-gray-700"></i>
+                <i class="fa-solid fa-heart text-xl text-gray-700"></i>
+                <i class="fa-solid fa-cart-shopping text-xl text-gray-700"></i>
             </div>
-
         </nav>
 
-        <div class="main">
-
-            <div class="men_text">
-                <h1>HealthyBe<span>Healthcare</span><br>is all about Healthcare</h1>
+        <div class="flex justify-between p-12 bg-green-100">
+            <div class="men_text max-w-lg">
+                <h1 class="text-4xl font-bold text-gray-800">HealthyBe <span class="text-green-600">Healthcare</span><br> is all about Healthcare</h1>
             </div>
 
             <div class="main_image">
-                <img src="image/the2.jpg" alt="the2">
+                <img src="image/the2.jpg" alt="the2" class="rounded-lg shadow-lg max-w-lg">
             </div>
-
         </div>
 
-        <p>
-            At Healthybe,we believe that everyone deserves access to high-quality healthcare that is
-            both compassionate and effective.Our mission is to empower individuals to live healthier lives by providing
-            expert
-            medical advice,personalized care and innovative healthcare solutions.
+        <p class="text-center text-lg text-gray-700 px-6 py-4">
+            At Healthybe, we believe that everyone deserves access to high-quality healthcare that is
+            both compassionate and effective. Our mission is to empower individuals to live healthier lives by providing
+            expert medical advice, personalized care, and innovative healthcare solutions.
         </p>
 
-        <div class="main_btn">
-            <a href="#">login Now</a>
-            <i class="fa-solid fa-angle-right"></i>
+        <div class="text-center mt-6">
+            <a href="login.html" class="bg-green-600 text-white py-2 px-6 rounded-full text-lg hover:bg-green-700">Login Now</a>
         </div>
-
     </section>
 
-
-
-    <!--About-->
-
-    <div class="about" id="About">
-        <div class="about_main">
-
-            <div class="image">
-                <img src="image/logo.jpg" alt="logo">
+    <!-- About Section -->
+    <div class="about py-16" id="About">
+        <div class="flex items-center justify-center gap-12">
+            <div class="image w-1/2">
+                <img src="image/logo.jpg" alt="logo" class="w-full rounded-lg">
             </div>
 
-            <div class="about_text">
-                <h1 text="center"><span>About</span>Us</h1>
-                <h3>Why Choose us?</h3>
-                <p>
+            <div class="about_text w-1/2">
+                <h1 class="text-3xl text-center font-semibold text-gray-800 mb-4"><span class="text-green-600">About</span> Us</h1>
+                <h3 class="text-xl text-gray-600 mb-4">Why Choose us?</h3>
+                <p class="text-lg text-gray-700">
                     HealthyBe Healthcare for personalized care, experienced professionals,
                     comprehensive services, and advanced medical technology, all focused
                     on improving your health and well-being.
                 </p>
             </div>
-
         </div>
-
-        <a href="#" class="about_btn">Login</a>
-
     </div>
 
+    <!-- Menu Section -->
+    <div class="menu py-16" id="Menu">
+        <h1 class="text-4xl text-center font-semibold text-gray-800 mb-8">HealthyBe <span class="text-green-600">Healthcare</span></h1>
 
-
-    <!--Menu-->
-
-    <div class="menu" id="Menu">
-        <h1>HealthyBe<span>Healthcare</span></h1>
-
-        <div class="menu_box">
-            <div class="menu_card">
-
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+            <div class="menu_card bg-white rounded-lg shadow-lg overflow-hidden">
                 <div class="menu_image">
-                    <img src="image/insurance.jpg" alt="insurance">
+                    <img src="image/insurance.jpg" alt="insurance" class="w-full h-56 object-cover">
                 </div>
-
-                <div class="small_card">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-
-                <div class="menu_info">
-                    <h2>Medical Insurance</h2>
-                    <p>
-                        Healthybe healthcare provides a best health insurance.
-                    </p>
-                    <div class="menu_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
+                <div class="menu_info p-4">
+                    <h2 class="text-2xl font-semibold text-gray-800">Medical Insurance</h2>
+                    <p class="text-gray-600 mt-2">Healthybe healthcare provides the best health insurance.</p>
+                    <div class="menu_icon mt-4">
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star-half-stroke text-yellow-400"></i>
                     </div>
-                    <a href="#" class="menu_btn">Contact Now</a>
+                    <a href="#" class="menu_btn bg-green-600 text-white py-2 px-6 rounded-full mt-4 inline-block text-center hover:bg-green-700">Contact Now</a>
                 </div>
-
             </div>
 
-            <div class="menu_card">
-
+            <div class="menu_card bg-white rounded-lg shadow-lg overflow-hidden">
                 <div class="menu_image">
-                    <img src="image/history.jpg" alt="history">
+                    <img src="image/history.jpg" alt="history" class="w-full h-56 object-cover">
                 </div>
-
-                <div class="small_card">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-
-                <div class="menu_info">
-                    <h2>Medical History</h2>
-                    <p>
-                        HealthyBe healthcare provides a best medical history.
-                    </p>
-                    <div class="menu_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
+                <div class="menu_info p-4">
+                    <h2 class="text-2xl font-semibold text-gray-800">Medical History</h2>
+                    <p class="text-gray-600 mt-2">HealthyBe healthcare provides the best medical history.</p>
+                    <div class="menu_icon mt-4">
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star-half-stroke text-yellow-400"></i>
                     </div>
-                    <a href="#" class="menu_btn">Contact Now</a>
+                    <a href="#" class="menu_btn bg-green-600 text-white py-2 px-6 rounded-full mt-4 inline-block text-center hover:bg-green-700">Contact Now</a>
                 </div>
-
             </div>
 
-            <div class="menu_card">
+            <!-- Repeat for other menu cards... -->
+        </div>
+    </div>
 
-                <div class="menu_image">
-                    <img src="image/diet.jpg" alt="diet">
-                </div>
-
-                <div class="small_card">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-
-                <div class="menu_info">
-                    <h2>Diet Plan</h2>
-                    <p>
-                        Healthybe healthcare provides a best diet plan for patient.
-                    </p>
-                    <div class="menu_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="menu_btn">Contact Now</a>
-                </div>
-
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="footer_main max-w-screen-xl mx-auto flex justify-between">
+            <div class="footer_tag">
+                <h2 class="text-2xl font-semibold mb-4">Quick Links</h2>
+                <p>Home</p>
+                <p>Login</p>
+                <p>Insurance</p>
+                <p>Emergency</p>
             </div>
 
-            <div class="menu_card">
-
-                <div class="menu_image">
-                    <img src="image/disease.jpg" alt="disease">
-                </div>
-
-                <div class="small_card">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-
-                <div class="menu_info">
-                    <h2>Diseases</h2>
-                    <p>
-                        Healthybe healthcare handle a lot of Diseases and improve your health.
-                    </p>
-                    <div class="menu_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="menu_btn">Contact Now</a>
-                </div>
-
+            <div class="footer_tag">
+                <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
+                <p>+918528113651</p>
+                <p>healthybe3464@gmail.com</p>
             </div>
 
-            <div class="menu_card">
-
-                <div class="menu_image">
-                    <img src="image/virus.jpg" alt="virus">
-                </div>
-
-                <div class="small_card">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-
-                <div class="menu_info">
-                    <h2>Viruses</h2>
-                    <p>
-                        Healthybe healthcare easily prevent from the viruses.
-                    </p>
-                    <div class="menu_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="menu_btn">Contact Now</a>
-                </div>
-
+            <div class="footer_tag">
+                <h2 class="text-2xl font-semibold mb-4">Our Service</h2>
+                <p>Insurance</p>
+                <p>Emergency Facilities</p>
+                <p>24 x 7 Service</p>
             </div>
-
-            <div class="menu_card">
-
-                <div class="menu_image">
-                    <img src="image/alert.jpg" alt="alert">
-                </div>
-
-                <div class="small_card">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-
-                <div class="menu_info">
-                    <h2>Alert & Precautions</h2>
-                    <p>
-                        Healthybe healthcare provides a better Precautions.
-
-                    </p>
-                    <div class="menu_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="menu_btn">Contact Now</a>
-                </div>
-
-            </div>
-
-            <div class="menu_card">
-
-                <div class="menu_image">
-                    <img src="image/vaccin.jpg" alt="vaccin">
-                </div>
-
-                <div class="small_card">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-
-                <div class="menu_info">
-                    <h2>Upcoming Vaccinations</h2>
-                    <p>
-                        Healthybe healthcare provides a Upcoming Vaccinations.
-
-                    </p>
-                    <div class="menu_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="menu_btn">Contact Now</a>
-                </div>
-
-            </div>
-
-            <div class="menu_card">
-
-                <div class="menu_image">
-                    <img src="image/emergency.jpg" alt="emgergency">
-                </div>
-
-                <div class="small_card">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-
-                <div class="menu_info">
-                    <h2>Emergency</h2>
-                    <p>
-                        Healthybe healthcare provides a Emergency facilities.
-                    </p>
-                    <div class="menu_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="menu_btn">Contact Now</a>
-                </div>
-
-            </div>
-
-
         </div>
 
-
-
-
-
-
-        <!--Gallary-->
-
-
-
-
-
-
-        <!--order-->
-
-        <div class="order" id="Order">
-            <h1><span>Registration</span>Form</h1>
-
-            <div class="order_main">
-
-                <div class="order_image">
-                    <img src="image/th4.jpg" alt="image">
-                </div>
-
-                <form action="#">
-
-                    <div class="input">
-                        <p>Name</p>
-                        <input type="text" placeholder="you name">
-                    </div>
-
-                    <div class="input">
-                        <p>Email</p>
-                        <input type="email" placeholder="you email">
-                    </div>
-
-                    <div class="input">
-                        <p>Number</p>
-                        <input placeholder="you number">
-                    </div>
-
-                    <div class="input">
-                        <p>Enquery</p>
-                        <input placeholder=" your Enquery">
-                    </div>
-
-                    <div class="input">
-                        <p>Address</p>
-                        <input placeholder="you Address">
-                    </div>
-                    <br>
-                    <a href="#" class="order_btn">Register Now</a></br>
-
-                </form>
-
-            </div>
-
-        </div>
-
-
-
-
-
-
-        <!--Footer-->
-
-        <footer>
-            <div class="footer_main">
-
-                <div class="footer_tag">
-                    <h2>Quick Links</h2>
-                    <p>Home</p>
-                    <p>login</p>
-                    <p>insurance</p>
-                    <p>Emergency</p>
-                </div>
-
-                <div class="footer_tag">
-                    <h2>Contact Us</h2>
-                    <p>+918528113651</p>
-                    <p>healthybe3464@gmail.com</p>
-                </div>
-
-                <div class="footer_tag">
-                    <h2>Our Service</h2>
-                    <p>Insurance</p>
-                    <p>Emergency facilities</p>
-                    <p>24 x 7 Service</p>
-                </div>
-
-
-
-            </div>
-
-            <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i><u> HealthyBe members</u></span></p>
-
-        </footer>
-
-
-
-
+        <p class="text-center text-gray-400 mt-6">Design by <span class="text-green-600 font-semibold">HealthyBe members</span></p>
+    </footer>
 </body>
-
 </html>

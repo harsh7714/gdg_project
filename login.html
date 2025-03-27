@@ -1,33 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Healthcare Login</title>
-    <link rel="stylesheet" href="login.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
 
-    <div class="login-container">
-        <div class="login-box">
-            <div class="logo-container">
-                <img src="/image/logo.png" alt="Healthcare Logo" class="logo">
+<body class="bg-gray-100">
+
+    <div class="flex items-center justify-center min-h-screen bg-gray-200">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-96">
+            <!-- Logo Container -->
+            <div class="text-center mb-6">
+                <img src="/image/logo.png" alt="Healthcare Logo" class="mx-auto h-16">
             </div>
-            <h2>Login to Your Healthcare Account</h2>
+
+            <h2 class="text-2xl font-semibold text-gray-800 text-center mb-4">Login to Your Healthcare Account</h2>
+
+            <!-- Login Form -->
             <form action="/login" method="POST">
-                <div class="textbox">
-                    <input type="text" placeholder="Username" name="username" required>
+                <div class="mb-4">
+                    <input type="text" name="username" placeholder="Username" required
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
                 </div>
-                <div class="textbox">
-                    <input type="password" placeholder="Password" name="password" required>
+                <div class="mb-6">
+                    <input type="password" name="password" placeholder="Password" required
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
                 </div>
-                <button type="submit" class="btn">Login</button>
+
+                <button type="submit"
+                    class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold text-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 transition mb-4">
+                    Login
+                </button>
             </form>
-            <div class="forgot-password">
-                <a href="#">Forgot Password?</a>
+
+            <!-- Forgot Password -->
+            <div class="text-center mt-4">
+                <a href="#" class="text-sm text-green-600 hover:text-green-700">Forgot Password?</a>
+            </div>
+
+            <!-- Registration Button -->
+            <div class="text-center mt-4">
+                <a href="registartion.html"
+                    class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold text-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                    Register Now
+                </a>
             </div>
         </div>
     </div>
 
 </body>
+
 </html>

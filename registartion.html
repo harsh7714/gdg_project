@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Registration</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <div class="flex items-center justify-center min-h-screen bg-gray-200">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-96">
+            <!-- Logo Container -->
+            <div class="text-center mb-6">
+                <img src="/image/logo.png" alt="Healthcare Logo" class="mx-auto h-16">
+            </div>
+
+            <h2 class="text-2xl font-semibold text-gray-800 text-center mb-4">Create Your Healthcare Account</h2>
+
+            <!-- Registration Form -->
+            <form action="/register" method="POST">
+                <!-- Full Name Input -->
+                <div class="mb-4">
+                    <input type="text" name="full_name" placeholder="Full Name" required
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+
+                <!-- Email Input -->
+                <div class="mb-4">
+                    <input type="email" name="email" placeholder="Email Address" required
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+
+                <!-- Phone Number Input -->
+                <div class="mb-4">
+                    <input type="text" name="phone" placeholder="Phone Number" required
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+
+                <!-- Password Input -->
+                <div class="mb-4">
+                    <input type="password" name="password" placeholder="Password" required
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+
+                <!-- Confirm Password Input -->
+                <div class="mb-6">
+                    <input type="password" name="confirm_password" placeholder="Confirm Password" required
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit"
+                    class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold text-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 transition mb-4">
+                    Register
+                </button>
+            </form>
+
+            <!-- Back to Login Link -->
+            <div class="text-center mt-4">
+                <p class="text-sm text-gray-600">
+                    Already have an account? 
+                    <a href="login.html" class="text-green-600 hover:text-green-700">Login here</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
