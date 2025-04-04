@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthyBe</title>
+    <link rel="icon" href="image/favlogo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <nav class="flex items-center justify-between p-6 bg-green-600 text-white shadow-md">
+        <div class="logo">
+            <img src="image/logo.png" alt="logo" class="h-12">
+        </div>
+
+        <ul class="flex gap-4">
+            <li><a href="login/login.html" class="text-lg text-white hover:text-yellow-400">Login</a></li>
+            <li><a href="component/reports.html" class="text-lg text-white hover:text-yellow-400">Reports</a></li>
+            <li><a href="component/insurance.html" class="text-lg text-white hover:text-yellow-400">Insurance</a></li>
+            <li><a href="component/emergency.html" class="text-lg text-white hover:text-yellow-400">Emergency</a></li>
+        </ul>
+    </nav>
+
+    <div class="flex items-center justify-center">
+        <h1 class="text-4xl font-bold text-gray-800 text-center"><span
+                class="text-green-600">Healthybe</span><br>Analyze Your Reports With Gemini</h1>
+    </div>
+
+    <h1 class="text-green-600 text-center font-semibold mt-8">To Analyze Your Reports Upload Your File Here !</h1>
+
+    <div class="w-full h-[38vh] flex items-center justify-center ">
+        <div class="w-[25%] h-[75%] flex flex-col items-center justify-center bg-green-200 rounded-lg  shadow-xl">
+            <label for="file">
+              <h1 class="text-center text-green-600 mb-1 font-bold">Please Upload File to Analyze!</h1>  <input type="file" id="userdata" name="userdata" class="bg-red-600 text-white mx-2">
+            </label>
+
+            <button id="analyze" class="bg-green-600 rounded-md mt-4 text-white font-bold h-[20%] w-[40%]">Analyze</button>
+        </div>
+    </div>
+
+    <!-- About Section -->
+
+    <div class="w-full h-auto">
+
+
+        <h1 class="text-3xl text-center font-bold text-gray-800 mb-4"><span class="text-green-600">About</span>
+            Us</h1>
+
+
+        <h3 class="text-xl text-black font-semibold mb-4 text-center">Why Choose us?</h3>
+
+        <p class="text-black font-semibold">
+            Welcome to <span class="text-green-600">HealthyBe</span>, your trusted partner in personalized
+            healthcare management. Using the power of Gemini, our advanced analytical tool, we empower
+            individuals to make informed health decisions. Our services include analyzing medical reports,
+            enabling the creation of comprehensive medical records, and providing tailored diet plans to support
+            your wellness journey. We also ensure you stay on track with timely alerts and reminders for
+            vaccinations and other health-related tasks. With <Span class="text-green-600">HealthyBe</Span>,
+            managing your health becomes effortless and efficient.
+
+        </p>
+
+    </div>
+
+
+
+
+
+    <!-- Footer Section -->
+
+    <footer class="w-full h-auto">
+        <div class="w-full h-full text-white flex flex-col justify-center bg-slate-900">
+            <div class="h-[6vh] w-[12vh] m-auto flex flex-row gap-6 mt-8">
+                <div>
+                    <img src="./image/google.png" alt="google">
+                </div>
+                <div>
+                    <img src="image/ai.png" alt="ai">
+                </div>
+            </div>
+            <div>
+                <p class="text-center text-white"><i class="fa-regular fa-copyright"></i>Designed by <span
+                        class="text-green-600 font-semibold">HealthyBe
+                        members</span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
