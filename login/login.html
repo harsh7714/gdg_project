@@ -10,43 +10,42 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-slate-900">
 
-    <div class="flex items-center justify-center min-h-screen bg-gray-200">
-        <div class="bg-white p-8 rounded-lg shadow-lg w-96">
+    <div class="flex items-center justify-center min-h-screen bg-slate-900">
+        <div class="bg-slate-500 p-8 rounded-lg shadow-xl w-96">
             <!-- Logo Container -->
             <div class="text-center mb-6">
                 <a href="https://imgbb.com/"><img src="https://i.ibb.co/Z6R3TyR4/logo.png" alt="logo" class="mx-auto h-16"></a>
             </div>
 
-            <h2 class="text-2xl font-semibold text-gray-800 text-center mb-4">Login to Your Healthcare Account</h2>
+            <h2 class="text-2xl font-semibold text-yellow-400 text-center mb-4">Login to Your Healthcare Account</h2>
 
             <!-- Login Form -->
             <form action="/login" method="POST">
                 <div class="mb-4">
                     <input type="text" name="username" placeholder="Username" required
-                        class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                        class="w-full p-3 bg-slate-400 placeholder:text-black border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
                 </div>
                 <div class="mb-6">
                     <input type="password" name="password" placeholder="Password" required
-                        class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                        class="w-full p-3 bg-slate-400 placeholder:text-black border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
                 </div>
 
                 <button type="submit"
-                    class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold text-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 transition mb-4">
+                    class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold text-lg hover:bg-blue-900 mb-4">
                     Login
                 </button>
             </form>
 
             <!-- Forgot Password -->
-            <div class="text-center mt-4">
-                <a href="#" class="text-sm text-green-600 hover:text-green-700">Forgot Password?</a>
+            <div class="text-center mt-3">
+                <a href="#" class="text-semibold text-yellow-400 hover:text-green-400">Forgot Password?</a>
             </div>
 
             <!-- Registration Button -->
-            <div class="text-center mt-4">
-                <a href="registartion.html"
-                    class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold text-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+            <div class=" w-full h-[40px] mt-3 bg-blue-600 text-white rounded-lg flex items-center justify-center hover:bg-blue-900">
+                <a href="registartion.html">
                     Register Now
                 </a>
             </div>
