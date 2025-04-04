@@ -32,14 +32,17 @@
     </div>
 
     <!-- file section -->
-    <div class="w-full h-[38vh] flex flex-col items-center justify-center ">
-        <label for="file">
-            <h1 class="text-center text-green-600 mb-2 font-bold">Please Upload File to Analyze!</h1> <input type="file"
-                id="userdata" name="userdata" class="bg-pink-400 text-white">
-        </label>
+        <form action="" class="w-full h-[38vh] flex flex-col items-center justify-center ">
 
-        <button id="analyze" class="bg-green-600 rounded-md mt-4 text-white font-bold h-[15%] w-[25%]">Analyze</button>
-    </div>
+            <label for="file">
+                <h1 class="text-center text-green-600 mb-2 font-bold">Please Upload File to Analyze!</h1> <input
+                    type="file" id="userdata" name="userdata" required class="bg-pink-400 text-white">
+            </label>
+
+            <button type="submit" id="analyze"
+                class="bg-green-600 rounded-md mt-4 text-white font-bold h-[15%] w-[25%]">Analyze</button>
+
+        </form>
 
     <!-- file section end -->
 
