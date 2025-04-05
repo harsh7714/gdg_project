@@ -1,0 +1,26 @@
+{
+  "name": "gdg-healthybe",
+  "version": "1.0.0",
+  "description": "heslth tracker",
+  "keywords": [
+    "healthybe"
+  ],
+  "homepage": "https://github.com/harsh7714/gdg_project#readme",
+  "bugs": {
+    "url": "https://github.com/harsh7714/gdg_project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harsh7714/gdg_project.git"
+  },
+  "license": "MIT",
+  "author": "healthybe members",
+  "type": "commonjs",
+  "main": "gemini.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "dependencies": {
+    "@google/genai": "^0.7.0"
+  }
+}
