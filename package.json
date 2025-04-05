@@ -1,26 +1,27 @@
 {
-  "name": "gdg-healthybe",
+  "name": "gdg",
   "version": "1.0.0",
-  "description": "heslth tracker",
-  "keywords": [
-    "healthybe"
-  ],
-  "homepage": "https://github.com/harsh7714/gdg_project#readme",
-  "bugs": {
-    "url": "https://github.com/harsh7714/gdg_project/issues"
+  "description": "",
+  "main": "gemini.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/harsh7714/gdg_project.git"
   },
-  "license": "MIT",
-  "author": "healthybe members",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "type": "commonjs",
-  "main": "gemini.js",
-  "scripts": {
-    "test": "npm test"
+  "bugs": {
+    "url": "https://github.com/harsh7714/gdg_project/issues"
   },
+  "homepage": "https://github.com/harsh7714/gdg_project#readme",
   "dependencies": {
     "@google/genai": "^0.7.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
   }
 }
