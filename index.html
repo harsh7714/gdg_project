@@ -11,113 +11,70 @@
 </head>
 
 <body class="w-full h-[100vh] bg-slate-900">
+    <!-- Navigation Bar -->
     <div class="w-full flex items-center justify-between p-6 bg-slate-800 text-white shadow-md">
-
         <ul class="w-full flex items-center justify-evenly gap-3">
             <li><a href="login/login.html" class="text-md text-white hover:text-yellow-400">Login</a></li>
             <li><a href="component/reports.html" class="text-md text-white hover:text-yellow-400">Reports</a></li>
             <li><a href="component/insurance.html" class="text-md text-white hover:text-yellow-400">Insurance</a></li>
             <li><a href="component/emergency.html" class="text-md text-white hover:text-yellow-400">Emergency</a></li>
         </ul>
-
     </div>
 
-
-    <div class=" w-full h-auto flex items-center justify-between">
-
+    <!-- Branding Section -->
+    <div class="w-full h-auto flex items-center justify-between mt-4">
         <div class="w-[5em] h-[1.8em] ml-2">
             <img src="image/Google_Gemini_logo.webp" alt="gemini" class="w-full h-full">
         </div>
-
         <div class="flex flex-row-reverse items-center justify-center mr-2">
-            <div class="w-auto h-auto flex items-center justify-center">
-                <h1
-                    class="h-12 text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-4xl font-semibold">
-                    HealthyBe
-                </h1>
+            <div class="w-auto h-auto flex  items-center justify-center">
+                <h1 class="h-12 text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-4xl font-semibold">HealthyBe</h1>
             </div>
             <div class="logo">
                 <img src="image/logo.png" alt="logo" class="h-9 rounded-full">
             </div>
         </div>
-
     </div>
-    
+
+    <!-- Tagline -->
     <div class="w-full h-auto flex items-center justify-center mt-6">
-        <h1 class="h-auto text-center h-12 text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-2xl font-semibold ">"Saving Lives , One Heartbeat at Time!"</h1>
+        <h1 class="text-center h-auto text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-2xl font-semibold">
+            "Saving Lives, One Heartbeat at a Time!"
+        </h1>
     </div>
 
-<div class="w-full h-auto flex items-center justify-center mt-12 mb-0.5">
-
-    <div class="w-[15em] h-[15em] rounded-md shadow-xl">
-        <img src="image/service.jpg" alt="services" class="w-full h-full rounded-md shadow-xl">
+    <div class="w-auto h-auto flex items-center justify-center mt-12">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col w-72">
+            <h2 class="text-lg font-bold text-yellow-400 mb-2">Patient Name: <span id="name" class="text-green-400 font-semibold text-center">Unknown</span></h2>
+            <p class="text-gray-300 font-bold text-yellow-400">Age: <span id="age" class="text-green-400 font-semibold text-center">Unknown</span></p>
+            <p class="text-gray-300 font-bold text-yellow-400">Condition: <span id="condition" class="text-green-400 font-semibold text-center">Unknown</span></p>
+            <p class="text-gray-300 font-bold text-yellow-400">Last Visit: <span id="date" class="text-green-400 font-semibold text-center">Unknown</span></p>
+            <p class="text-gray-300 font-bold text-yellow-400">Prescription: <span id="prescription" class="text-green-400 font-semibold text-center">Unknown</span></p>
+        </div>
     </div>
 
-</div>
-
-    <!-- file section -->
-    <form action="" class="w-full h-[38vh] flex flex-col items-center justify-center ">
-
+    <!-- File Upload Section -->
+    <div class="w-full h-[38vh] flex flex-col items-center justify-center mt-6">
         <label for="file">
-            <h1 class="text-center text-white mb-2 font-bold">Upload Your Medical Files</h1> <input type="file"
-                id="userdata" name="userdata" accept=".pdf,.img,.png,.jpg" required class="bg-slate-600 text-white shadow-xl rounded-md">
+            <h1 class="text-center text-white mb-2 font-bold">Upload Your Medical Files</h1>
+            <input type="file" id="userdata" name="userdata" accept=".pdf,.png,.jpg,.jpeg" required
+                class="bg-slate-600 text-white shadow-xl rounded-md">
         </label>
-
         <button type="submit" id="create"
-            class="bg-blue-600 rounded-md mt-4 text-white font-bold h-[15%] w-[25%] shadow-xl shadow-blue-500/40 transition-transform transform hover:scale-110">Create</button>
-
-    </form>
-
-    <!-- file section end -->
-
-    <!-- About Section -->
-
-    <div class="w-full h-auto mb-10 flex flex-col items-center justify-center">
-
-        <div class=" w-auto h-auto border-b-4 border-green-400 mb-4">
-            <h1
-                class="text-3xl text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-blue-600 to-purple-700 mb-1">
-                About Us</h1>
-        </div>
-
-        <div>
-            <p class="text-yellow-400 font-semibold text-center">
-                Welcome to <span class="text-blue-600">HealthyBe</span>, your trusted partner in personalized
-                healthcare management. Using the power of Gemini, our advanced analytical tool, we empower
-                individuals to make informed health decisions. Our services include analyzing medical reports,
-                enabling the creation of comprehensive medical records, and providing tailored diet plans to support
-                your wellness journey. We also ensure you stay on track with timely alerts and reminders for
-                vaccinations and other health-related tasks. With <Span class="text-blue-600">HealthyBe</Span>,
-                managing your health becomes effortless and efficient.
-
-            </p>
-        </div>
-
+            class="bg-blue-600 rounded-md mt-4 text-white font-bold h-[15%] w-[25%] shadow-xl shadow-blue-500/40 transition-transform transform hover:scale-110">
+            Create
+        </button>
     </div>
 
-
-
-
-
-    <!-- Footer Section -->
-
-    <footer class="w-full h-auto mb-[0vh]">
-        <div class="w-full h-full text-white flex flex-col justify-center bg-slate-800">
-            <div class="h-[6vh] w-[12vh] m-auto flex flex-row gap-6 mt-8">
-                <div>
-                    <img src="./image/google.png" alt="google">
-                </div>
-                <div>
-                    <img src="image/ai.png" alt="ai">
-                </div>
-            </div>
-            <div>
-                <p class="text-center text-white"><i class="fa-regular fa-copyright"></i>Designed by <span
-                        class="text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-blue-600 to-purple-700  font-semibold">HealthyBe
-                        members</span></p>
-            </div>
+    <!-- Footer -->
+    <footer class="w-full h-auto bg-slate-800 text-white py-6">
+        <div class="text-center">
+            <p><i class="fa-regular fa-copyright"></i> Designed by <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-blue-600 to-purple-700 font-semibold">
+                    HealthyBe Members</span></p>
         </div>
     </footer>
+
     <script type="module" src="gemini.js"></script>
 </body>
 
