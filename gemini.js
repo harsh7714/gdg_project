@@ -33,6 +33,15 @@ async function processFile(file, prompt) {
 }
 
 document.getElementById("create").addEventListener("click", async () => {
+
+    if (create.classList.contains("bg-blue-500")) {
+        create.classList.remove("bg-blue-500");
+        create.classList.add("bg-green-500");
+      } else {
+        create.classList.remove("bg-green-500");
+        create.classList.add("bg-blue-500");
+      }
+
     try {
         const fileInput = document.getElementById("userdata");
         const file = fileInput.files[0];
@@ -41,7 +50,7 @@ document.getElementById("create").addEventListener("click", async () => {
             return;
         }
 
-        const prompt = "Extract and return the following details in JSON format: name, age, medical conditions, prescription, and the date. Only include these fields.";
+        const prompt = "Extract and return the following details in JSON format: name, age, medicalconditions, prescription, and the date. Only include these fields.";
 
         const data = await processFile(file, prompt);
 
